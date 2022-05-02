@@ -1,4 +1,4 @@
-name: Hugo CI
+name: Hugo Pages
 on: push
 jobs:
   deploy:
@@ -21,9 +21,8 @@ jobs:
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          external_repository: enager-game/enager-game
           personal_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./public
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
-          publish_branch: master
+          publish_branch: compiled-pages
