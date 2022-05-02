@@ -1,0 +1,5 @@
+baseURL = 'http://enager-game.github.io'
+languageCode = 'en-us'
+title = 'Enager Wiki'
+enableRobotsTXT = true
+theme = "ananke"
